@@ -7,20 +7,20 @@ export default defineNuxtPlugin(async nuxtApp => {
     console.log("NuxtPlugin firestore client mode frontend");
 
     const firebaseConfig = {
-        apiKey: "AIzaSyAaIGPVhcSg6Q2QdMsBFEZTCe0u1SK0xlE",
-        authDomain: "tiendaalimentos.firebaseapp.com",
-        databaseURL: "https://tiendaalimentos.firebaseio.com",
-        projectId: "tiendaalimentos",
-        storageBucket: "tiendaalimentos.appspot.com",
-        messagingSenderId: "68329043413",
-        appId: "1:68329043413:web:17b246bedd73a2f537b95c"
+        apiKey: "",
+        authDomain: "******.firebaseapp.com",
+        databaseURL: "",
+        projectId: "******",
+        storageBucket: "*****",
+        messagingSenderId: "***",
+        appId: "*****"
     }
 
     const app = initializeApp(firebaseConfig)
 
     const db = getFirestore(app)
 
-    const querySnapshot = await getDocs(collection(db, "Almacen"));
+    const querySnapshot = await getDocs(collection(db, "namecollection"));
     querySnapshot.forEach((doc) => {
 
         // check the connection 

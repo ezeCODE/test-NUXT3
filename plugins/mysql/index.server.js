@@ -5,9 +5,9 @@ export default defineNuxtPlugin(nuxtApp => {
 
     const connection = mysql.createConnection({
         host: 'localhost',
-        user: 'usereze',
-        password: 'pass123',
-        database: 'mercadotienda',
+        user: '',
+        password: '',
+        database: '',
 
     })
 
