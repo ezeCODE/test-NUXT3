@@ -1,0 +1,144 @@
+@import "./screen";
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+.font-Oswald {
+    font-family: 'Oswald', sans-serif;
+}
+.font-Anton {
+    font-family: 'Anton', sans-serif;
+}
+.paragraph, .paragraph-small {
+    user-select: none;
+    line-height: normal;
+}
+.font-bold {
+    font-weight: bold;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.space-nowrap {
+    white-space: nowrap;
+}
+.line-height-normal {
+    line-height: normal;
+}
+.not-wrap {
+    word-break: keep-all;
+}
+.text-center {
+    text-align: center;
+}
+.text-end {
+    text-align: end;
+}
+.letter-1 {
+    letter-spacing: 1px;
+}
+.sub-title {
+    font-size: 2em;
+    @include tablet {
+        font-size: 2em;
+    }
+    @include desktop {
+        font-size: 2.5em;
+    }
+}
+.nav-vertical-paragraph {
+    font-size: 1.1em;
+    @include tablet {
+        font-size: 1.4em;
+    }
+}
+.attetion-paragraph {
+    font-size: 1.5em;
+    @include tablet {
+        font-size: 1.5em;
+    }
+}
+.title-h1 {
+    line-height: normal;
+    font-size: 2.7em;
+    display: block;
+    @include desktop {
+        font-size: 5em;
+    }
+}
+.title-h3 {
+    line-height: normal;
+    font-size: 1.5em;
+    display: block;
+    @include desktop {
+        font-size: 1.7em;
+    }
+}
+.paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: .7em;
+    line-height: 24px;
+    @include tablet {
+        font-size: 1em;
+    }
+}
+.text-limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.paragraph-small {
+    font-size: .6em;
+    font-family: 'Roboto', sans-serif;
+    @include tablet {
+        font-size: .9em;
+    }
+}
+.label-title {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+.text-italic {
+    font-style: italic;
+}
+.text-deco-none {
+    text-decoration: none;
+}
+.text-cross {
+    text-decoration: line-through;
+}
+.text-decoration-none {
+    text-decoration: none;
+}
+.text-hover-underline {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.text-breal-all {
+    word-break: break-all;
+}
+.space-nowrap-normal {
+    white-space: normal;
+}
+.select-none {
+    user-select: none;
+}
+.letter-spacing {
+    letter-spacing: 1px;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-hover-red {
+    &:hover {
+        color: red;
+    }
+}

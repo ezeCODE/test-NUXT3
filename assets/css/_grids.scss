@@ -1,0 +1,116 @@
+@import "./screen.scss";
+.diplay-block {
+    display: block;
+}
+.display-flex {
+    display: flex;
+}
+.flow-nowrap {
+    flex-flow: nowrap;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-grow-2 {
+    flex-grow: 2;
+}
+.flex-grow-3 {
+    flex-grow: 3;
+}
+.flex-grow-4 {
+    flex-grow: 4;
+}
+.justify-center {
+    justify-items: center;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.space-around {
+    justify-content: space-around;
+}
+.justify-items-center {
+    justify-items: center;
+}
+.align-content-start {
+    align-content: flex-start;
+}
+.items-center {
+    align-items: center;
+}
+.items-center-all {
+    align-items: stretch;
+}
+.grids {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.gap-1 {
+    gap: 1em;
+}
+.gap-2 {
+    gap: 2em;
+}
+.gap-3 {
+    gap: 3em;
+}
+.columns-auto-10 {
+    grid-template-columns: repeat(10, max-content);
+}
+.columns-auto-20 {
+    grid-template-columns: repeat(20, max-content);
+}
+.cols-5-max-content {
+    grid-template-columns: repeat(5, 150px);
+}
+.cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+.body-session-grid {
+    display: grid;
+}
+.grid-cols-x2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-x3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-cols-x4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-cols-x10 {
+    grid-template-columns: repeat(10, 203px);
+}
+.grid-cols-x12 {
+    grid-template-columns: repeat(10, 310px);
+}
+.grid-cols-x20 {
+    grid-template-columns: repeat(20, 203px);
+}
+.grid-x1-x2 {
+    grid-template-columns: repeat(1, 1fr);
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.grid-x1-x3 {
+    grid-template-columns: repeat(1, 1fr);
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.grid-x1-x4 {
+    grid-template-columns: repeat(1, 1fr);
+    @include tablet {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.grid-x1-x4 {
+    grid-template-columns: repeat(1, 1fr);
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
